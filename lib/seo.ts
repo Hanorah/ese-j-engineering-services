@@ -6,6 +6,11 @@ export const abs = (path = "/") => `${SITE_URL}${path}`;
 
 export const keywords = [
   "ESE J Engineering",
+  "engineering company in Benin City",
+  "construction company in Benin City, Edo State",
+  "welding and fabrication Benin City",
+  "plumbing contractor Benin City",
+  "engineering company in Edo State",
   "engineering company in Nigeria",
   "construction company Nigeria",
   "mechanical engineering contractor Nigeria",
@@ -46,7 +51,11 @@ export function businessJsonLd() {
       ...(company.state && { addressRegion: company.state }),
       addressCountry: "NG",
     },
-    areaServed: { "@type": "Country", name: "Nigeria" },
+    areaServed: [
+      { "@type": "City", name: "Benin City" },
+      { "@type": "State", name: "Edo State" },
+      { "@type": "Country", name: "Nigeria" },
+    ],
     identifier: { "@type": "PropertyValue", propertyID: "CAC RC Number", value: company.rcNumber },
     memberOf: { "@type": "Organization", name: "Nigerian Association of Technologists in Engineering (NATE)" },
     numberOfEmployees: { "@type": "QuantitativeValue", minValue: 10 },

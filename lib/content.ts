@@ -10,9 +10,8 @@ export const company = {
   whatsapp: "2348064304119",
   email: "esejengineering@gmail.com",
   address: "165, Murtala Muhammed Way",
-  // TODO: fill in. Google Maps / local search need the city and state to match the Google Business Profile exactly.
-  city: "",
-  state: "",
+  city: "Benin City",
+  state: "Edo State",
   country: "Nigeria",
   website: "www.esejengineering.com",
   url: "https://www.esejengineering.com",

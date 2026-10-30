@@ -48,7 +48,7 @@ Deploy by importing the repo into Vercel (zero config).
 
 | What | Where |
 | --- | --- |
-| Business details for Google/Maps/AI (name, address, phone, socials) | `lib/content.ts` → `company` (**fill in `city`, `state`, and `socials`**) |
+| Business details for Google/Maps/AI (name, address, phone, socials) | `lib/content.ts` → `company` (**add `socials` once profiles exist**) |
 | Structured data (GeneralContractor, Service, FAQ, Breadcrumbs) | `lib/seo.ts`, rendered by `components/JsonLd.tsx` |
 | Per-page titles, descriptions, canonical URLs, share cards | `pageMetadata()` in `lib/seo.ts` |
 | Sitemap / robots (AI crawlers explicitly allowed) | `app/sitemap.ts`, `app/robots.ts` → `/sitemap.xml`, `/robots.txt` |

@@ -21,7 +21,7 @@ const sans = Inter_Tight({ subsets: ["latin"], variable: "--font-sans", display:
 const serif = Instrument_Serif({ subsets: ["latin"], weight: "400", style: ["normal", "italic"], variable: "--font-serif", display: "swap" });
 
 const description =
-  "ESE J Engineering Ltd is a Nigerian engineering & construction company (since 2009): project management, mechanical works, certified welding & fabrication, plumbing, procurement and building construction.";
+  "ESE J Engineering Ltd is an engineering & construction company in Benin City, Edo State, serving all of Nigeria since 2009: project management, mechanical works, certified welding & fabrication, plumbing, procurement and building construction.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
