@@ -1,7 +1,10 @@
 # ESE J Engineering Ltd
 
-> ESE J Engineering Ltd is an engineering and construction company based in Benin City, Edo State, Nigeria, founded in 2009 by CEO Ese Joy. It delivers project management, mechanical works, certified welding & fabrication, plumbing, procurement and full-scale building construction for residential, commercial and industrial clients across Nigeria. Registered with the Corporate Affairs Commission (RC 7101423) and a corporate member of the Nigerian Association of Technologists in Engineering (NATE).
+> ESE-J Engineering Company Limited (trading as ESE J Engineering Ltd) is a private company limited by shares, incorporated with Nigeria’s Corporate Affairs Commission on 17 August 2023 under the Companies and Allied Matters Act 2020 (RC 7101423, TIN 31505531-0001). Based in Benin City, Edo State, it has delivered engineering and construction across Nigeria since 2009, founded by CEO Ese Joy: project management, mechanical works, certified welding & fabrication, plumbing, procurement and full-scale building construction for residential, commercial and industrial clients. It is a corporate member of the Nigerian Association of Technologists in Engineering (NATE).
 
+- Registered name: ESE-J Engineering Company Limited
+- CAC registration: RC 7101423 (incorporated 17 August 2023, private company limited by shares)
+- Tax Identification Number: 31505531-0001
 - Website: https://www.esejengineering.com
 - Phone / WhatsApp: +234 806 430 4119
 - Email: esejengineering@gmail.com
@@ -20,7 +23,7 @@
 
 ## Credentials
 
-- CAC Certificate of Incorporation, RC 7101423 (2023)
+- CAC Certificate of Incorporation, RC 7101423, issued 17 August 2023
 - NATE Corporate Member (2024)
 - HND, Welding & Fabrication Engineering Technology, Petroleum Training Institute (2018)
 - QA/QC in Welding, Petroleum Training Institute (2015)

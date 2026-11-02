@@ -21,7 +21,7 @@ export default function ServicesPage() {
     <>
       <JsonLd data={breadcrumbJsonLd([{ name: "Services", path: "/services" }])} />
       <PageHero
-        image="/img/stock/refinery.jpg"
+        image="/img/ng/abuja-cladding.jpg"
         eyebrow="What we do"
         title={<>End-to-end engineering <em>solutions</em></>}
         text="A comprehensive range of engineering and construction services, tailored to the diverse needs of our clients."

@@ -6,6 +6,7 @@ import SectionHead from "@/components/SectionHead";
 import QuoteForm from "@/components/QuoteForm";
 import Faq from "@/components/Faq";
 import Icon from "@/components/Icon";
+import CompanyFacts from "@/components/CompanyFacts";
 import { company, fullAddress } from "@/lib/content";
 
 export const metadata: Metadata = pageMetadata({
@@ -26,7 +27,7 @@ export default function ContactPage() {
     <>
       <JsonLd data={[faqJsonLd(), breadcrumbJsonLd([{ name: "Contact", path: "/contact" }])]} />
       <PageHero
-        image="/img/stock/drawings.jpg"
+        image="/img/team-crew.jpg"
         eyebrow="Contact"
         title={<>Ready to launch your <em>project?</em></>}
         text="Tell us what you're building. We'll get back to you with next steps and a quote."
@@ -73,7 +74,14 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="section section--white">
+      <section className="section section--white" id="registration">
+        <div className="container">
+          <SectionHead label="Company registration" strong="Registered," light="certified and accountable" />
+          <CompanyFacts />
+        </div>
+      </section>
+
+      <section className="section">
         <div className="container faq-wrap">
           <SectionHead label="FAQ" strong="Questions" light="we often get" />
           <Faq />

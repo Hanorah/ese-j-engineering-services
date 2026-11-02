@@ -15,7 +15,15 @@ export const company = {
   country: "Nigeria",
   website: "www.esejengineering.com",
   url: "https://www.esejengineering.com",
+  /** Exactly as on the CAC Certificate of Incorporation */
+  legalName: "ESE-J Engineering Company Limited",
   rcNumber: "7101423",
+  tin: "31505531-0001",
+  companyType: "Private company limited by shares",
+  incorporated: "2023-08-17",
+  incorporatedLabel: "17 August 2023",
+  registrar: "Corporate Affairs Commission (CAC), Nigeria",
+  act: "Companies and Allied Matters Act 2020",
   founded: 2009,
   profilePdf: "/ese-j-company-profile.pdf",
   /** Add social profile URLs here as they're created (LinkedIn, Facebook, Instagram, Google Business). */
@@ -51,8 +59,8 @@ export const services: Service[] = [
     title: "Project Management",
     short: "Planning, execution and delivery, from first brief to final handover.",
     icon: "clipboard",
-    image: "/img/stock/blueprints.jpg",
-    hero: "/img/stock/engineers-pointing.jpg",
+    image: "/img/ng/abuja-frame-2.jpg",
+    hero: "/img/ng/bricklayers-kwara.jpg",
     intro: "Seamless planning, execution and delivery of projects from start to finish.",
     body: "Our project managers keep scope, cost, quality and safety aligned from day one. We set clear milestones, coordinate every trade and supplier on site, and keep you informed at every stage, so your project lands on time, on budget and to specification.",
     offerings: [
@@ -68,15 +76,15 @@ export const services: Service[] = [
       { title: "Predictable delivery", text: "Milestone-based plans with regular progress reviews." },
       { title: "Fewer surprises", text: "Risks identified early through site analysis and feasibility checks." },
     ],
-    realPhoto: "/img/team.jpg",
+    realPhoto: "/img/team-crew.jpg",
   },
   {
     slug: "mechanical-works",
     title: "Mechanical Works",
     short: "Installation, maintenance and repair of mechanical systems and piping.",
     icon: "gear",
-    image: "/img/stock/industrial-pipes.jpg",
-    hero: "/img/stock/refinery.jpg",
+    image: "/img/pipeline-crew.jpg",
+    hero: "/img/ng/excavator.jpg",
     intro: "Installation, maintenance and repair of mechanical systems built to specification.",
     body: "From pumps and rotating equipment to process piping and HDPE pipe fusion, our mechanical team installs, maintains and repairs the systems that keep facilities running, with strict adherence to safety protocols and quality control.",
     offerings: [
@@ -99,8 +107,8 @@ export const services: Service[] = [
     title: "Certified Welding & Fabrication",
     short: "Certified welding for industrial and structural applications.",
     icon: "flame",
-    image: "/img/stock/welding.jpg",
-    hero: "/img/stock/grinding-sparks.jpg",
+    image: "/img/ng/gate-fabrication.jpg",
+    hero: "/img/ng/welder-sparks.jpg",
     intro: "Certified welding and fabrication for industrial and structural applications.",
     body: "Our welding capability is backed by formal training in Welding & Fabrication Engineering Technology and QA/QC in welding. We fabricate and weld structural steel, pipework, tanks and vessels, and architectural metalwork, with every joint held to the required procedure.",
     offerings: [
@@ -123,8 +131,8 @@ export const services: Service[] = [
     title: "Plumbing Solutions",
     short: "Commercial and industrial plumbing, from trenching to commissioning.",
     icon: "drop",
-    image: "/img/stock/plumbing-pipes.jpg",
-    hero: "/img/stock/plumbing-pipes.jpg",
+    image: "/img/plumbing-works.jpg",
+    hero: "/img/ng/storm-pipe.jpg",
     intro: "Plumbing solutions for commercial and industrial systems.",
     body: "We design, install and maintain plumbing systems for commercial and industrial facilities, covering water supply, distribution, drainage and pressure testing, laid out cleanly and built to last.",
     offerings: [
@@ -147,8 +155,8 @@ export const services: Service[] = [
     title: "Procurement",
     short: "Strategic sourcing and supply of engineering materials and equipment.",
     icon: "box",
-    image: "/img/stock/warehouse.jpg",
-    hero: "/img/stock/warehouse.jpg",
+    image: "/img/ng/block-moulding.jpg",
+    hero: "/img/ng/cement-mixing.jpg",
     intro: "Strategic sourcing and supply of high-quality engineering materials and equipment.",
     body: "We source, qualify and deliver the materials and equipment your project depends on. Our procurement team works with trusted vendors to secure the right specification, at the right price, delivered when the site needs it.",
     offerings: [
@@ -170,8 +178,8 @@ export const services: Service[] = [
     title: "Building Construction",
     short: "Design, civil works and construction of residential, commercial and industrial structures.",
     icon: "building",
-    image: "/img/stock/building-frame.jpg",
-    hero: "/img/stock/hero-crane.jpg",
+    image: "/img/ng/abuja-cladding.jpg",
+    hero: "/img/ng/concrete-pump.jpg",
     intro: "Full-scale building construction, from design to civil works and structures.",
     body: "We deliver full-scale building construction services encompassing design, civil works, and the construction of residential, commercial and industrial structures, managed end-to-end by one accountable team.",
     offerings: [
@@ -225,7 +233,7 @@ export const timeline = [
   { year: "2011", title: "HSE foundations", text: "Health, Safety & Environment management training with the Occupational Safety Academy." },
   { year: "2015", title: "Welding QA/QC & HSE Level 3", text: "QA/QC in Welding at the Petroleum Training Institute and HSE Level 3 with ISPON." },
   { year: "2018", title: "Welding & fabrication credentials", text: "HND in Welding & Fabrication Engineering Technology (PTI) and ITF NISDP certification." },
-  { year: "2023", title: "Incorporated with CAC", text: "Registered as ESE-J Engineering Company Limited, RC 7101423." },
+  { year: "2023", title: "Incorporated with CAC", text: "Incorporated on 17 August 2023 as ESE-J Engineering Company Limited, a private company limited by shares (RC 7101423)." },
   { year: "2024", title: "NATE corporate membership", text: "Admitted as a Corporate Member of the Nigerian Association of Technologists in Engineering." },
 ];
 
@@ -240,51 +248,97 @@ export type GalleryItem = {
 };
 
 export const gallery: GalleryItem[] = [
-  { src: "/img/stock/steel-structure.jpg", title: "Structural steel frame", category: "Steel & Fabrication", size: "wide" },
-  { src: "/img/stock/tower-crane.jpg", title: "Tower crane on a high-rise build", category: "Construction", size: "tall" },
-  { src: "/img/stock/process-piping.jpg", title: "Stainless process piping", category: "Mechanical & Piping" },
+  { src: "/img/ng/abuja-cladding.jpg", title: "Multi-storey block, cladding stage", category: "Construction", size: "tall" },
+  { src: "/img/ng/concrete-pump.jpg", title: "Concrete pour with boom pump", category: "Construction", size: "wide" },
   { src: "/img/pipeline-crew.jpg", title: "Large-diameter pipeline works", category: "Mechanical & Piping", onSite: true },
-  { src: "/img/stock/frame-aerial.jpg", title: "Building frame from above", category: "Construction", size: "wide" },
-  { src: "/img/stock/refinery-night.jpg", title: "Refinery & process plant", category: "Oil & Gas" },
-  { src: "/img/stock/bathroom.jpg", title: "Finished bathroom plumbing", category: "Plumbing", size: "tall" },
-  { src: "/img/stock/building-frame.jpg", title: "Multi-storey structure", category: "Construction" },
-  { src: "/img/stock/steel-truss.jpg", title: "Steel truss detail", category: "Steel & Fabrication" },
-  { src: "/img/welding-collage.jpg", title: "Pipe fitting & tee welding", category: "Steel & Fabrication", onSite: true },
-  { src: "/img/stock/commercial-building.jpg", title: "Commercial building exterior", category: "Construction", size: "wide" },
-  { src: "/img/stock/plumbing-pipes.jpg", title: "Water supply manifold & valves", category: "Plumbing" },
-  { src: "/img/stock/industrial-pipes.jpg", title: "Pump & piping installation", category: "Mechanical & Piping", size: "tall" },
-  { src: "/img/stock/apartments.jpg", title: "Residential apartment block", category: "Construction" },
-  { src: "/img/stock/warehouse-stock.jpg", title: "Materials staged for supply", category: "Procurement" },
-  { src: "/img/hdpe-fusion.jpg", title: "HDPE pipe butt-fusion", category: "Mechanical & Piping", onSite: true },
-  { src: "/img/stock/refinery.jpg", title: "Oil & gas facility", category: "Oil & Gas", size: "wide" },
-  { src: "/img/stock/cranes-sky.jpg", title: "Cranes over a rising structure", category: "Construction" },
-  { src: "/img/stock/tap-bw.jpg", title: "Fixture installation", category: "Plumbing" },
-  { src: "/img/stock/earthworks.jpg", title: "Site preparation & earthworks", category: "Construction", size: "wide" },
-  { src: "/img/stock/container-port.jpg", title: "Equipment logistics", category: "Procurement" },
+  { src: "/img/ng/multistorey-frame.jpg", title: "Reinforced concrete frame", category: "Construction" },
+  { src: "/img/welding-collage.jpg", title: "Pipe fitting & tee welding", category: "Steel & Fabrication", onSite: true, size: "tall" },
+  { src: "/img/ng/abuja-estate.jpg", title: "Completed residential estate", category: "Construction", size: "wide" },
+  { src: "/img/ng/excavator.jpg", title: "Excavation & site clearing", category: "Civil & Earthworks" },
+  { src: "/img/ng/gate-fabrication.jpg", title: "Steel gate fabrication", category: "Steel & Fabrication" },
+  { src: "/img/ng/abuja-frame.jpg", title: "Commercial building, structure complete", category: "Construction" },
+  { src: "/img/hdpe-fusion.jpg", title: "HDPE pipe butt-fusion", category: "Mechanical & Piping", onSite: true, size: "tall" },
+  { src: "/img/ng/storm-pipe.jpg", title: "Storm-water pipe installation", category: "Plumbing", size: "wide" },
+  { src: "/img/ng/crane-abuja.jpg", title: "Tower crane on a city site", category: "Construction" },
+  { src: "/img/ng/block-moulding.jpg", title: "Sandcrete block production", category: "Procurement" },
+  { src: "/img/ng/staircase-welding.jpg", title: "Steel staircase welding", category: "Steel & Fabrication" },
+  { src: "/img/ng/frame-street.jpg", title: "Two-storey frame going up", category: "Construction", size: "wide" },
+  { src: "/img/plumbing-works.jpg", title: "Underground plumbing installation", category: "Plumbing", onSite: true, size: "tall" },
+  { src: "/img/ng/loader.jpg", title: "Wheel loader on earthworks", category: "Civil & Earthworks" },
+  { src: "/img/ng/abuja-frame-2.jpg", title: "Office block under construction", category: "Construction" },
+  { src: "/img/ng/cement-mixing.jpg", title: "Materials batching on site", category: "Procurement" },
+  { src: "/img/ng/blockwork-house.jpg", title: "Residential blockwork to lintel level", category: "Construction", size: "wide" },
   { src: "/img/ceo-welding.jpg", title: "Gate fabrication & welding", category: "Steel & Fabrication", onSite: true, size: "tall" },
-  { src: "/img/stock/facade.jpg", title: "Finished building facade", category: "Construction" },
-  { src: "/img/stock/towers-cranes.jpg", title: "High-rise towers under construction", category: "Construction" },
-  { src: "/img/stock/warehouse.jpg", title: "Engineering materials store", category: "Procurement" },
-  { src: "/img/plumbing-works.jpg", title: "Underground plumbing installation", category: "Plumbing", onSite: true },
-  { src: "/img/stock/house-exterior.jpg", title: "Residential build, completed", category: "Construction", size: "wide" },
-  { src: "/img/stock/excavator.jpg", title: "Heavy plant on site", category: "Construction" },
-  { src: "/img/stock/tools.jpg", title: "Tools & equipment supply", category: "Procurement" },
-  { src: "/img/team.jpg", title: "Field crew mobilisation", category: "Our team", onSite: true, size: "wide" },
+  { src: "/img/ng/building-project.jpg", title: "Ground-floor slab formwork", category: "Construction" },
+  { src: "/img/ng/foundation-walls.jpg", title: "Foundation & substructure walls", category: "Civil & Earthworks" },
+  { src: "/img/ng/frame-street-2.jpg", title: "Mixed-use building frame", category: "Construction" },
+  { src: "/img/ng/trench-blocks.jpg", title: "Foundation blockwork in trench", category: "Civil & Earthworks", size: "wide" },
+  { src: "/img/ng/roof-trusses.jpg", title: "Roof truss installation", category: "Construction" },
+  { src: "/img/ng/lagos-skyline.jpg", title: "Lagos commercial district", category: "Construction", size: "wide" },
+  { src: "/img/team-crew.jpg", title: "The ESE J crew", category: "Our team", onSite: true, size: "wide" },
+  { src: "/img/team.jpg", title: "Field crew mobilisation", category: "Our team", onSite: true },
   { src: "/img/site-team.jpg", title: "Site team & HSE briefing", category: "Our team", onSite: true },
   { src: "/img/ceo.jpg", title: "Leadership on site", category: "Our team", onSite: true },
 ];
 
 /** Five picks for the home page mosaic, mostly people-free project shots. */
 export const galleryHighlights = [
-  "/img/stock/steel-structure.jpg",
-  "/img/stock/process-piping.jpg",
-  "/img/stock/frame-aerial.jpg",
+  "/img/ng/abuja-cladding.jpg",
+  "/img/ng/abuja-estate.jpg",
+  "/img/ng/multistorey-frame.jpg",
   "/img/pipeline-crew.jpg",
-  "/img/stock/refinery-night.jpg",
+  "/img/ng/crane-abuja.jpg",
 ].map((src) => gallery.find((g) => g.src === src)!);
 
+export type BeforeAfter = { title: string; location: string; before: string; after: string; text?: string };
+
+/**
+ * Before & after pairs of houses ESE J has built. Use two photos taken from the same spot.
+ * The section stays hidden on the live site until this list has at least one pair.
+ */
+export const beforeAfter: BeforeAfter[] = [];
+
+/** Shown only in local development, so the slider can be previewed before the real photos arrive. */
+export const beforeAfterSample: BeforeAfter = {
+  title: "",
+  location: "Benin City, Edo State",
+  before: "/img/ng/trench-blocks.jpg",
+  after: "/img/ng/abuja-estate.jpg",
+  text: "",
+};
+
+/** Licensed photos from Wikimedia Commons (illustrative, not ESE J projects). */
+export const photoCredits = [
+  { file: "/img/ng/concrete-pump.jpg", author: "WTF Formwork", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Concrete_pump.JPG" },
+  { file: "/img/ng/carpenters-roof.jpg", author: "Ebere Jude", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:African_Carpenters_on_Site_in_Nigeria.jpg" },
+  { file: "/img/ng/crane-abuja.jpg", author: "Anasskoko", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Crane_in_Abuja.jpg" },
+  { file: "/img/ng/frame-street.jpg", author: "Isaacayodele32", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Construction_01.jpg" },
+  { file: "/img/ng/frame-street-2.jpg", author: "Isaacayodele32", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Construction_02.jpg" },
+  { file: "/img/ng/blockwork-house.jpg", author: "Neyoice89", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:A_construction_site.jpg" },
+  { file: "/img/ng/building-project.jpg", author: "Iciro Iciro", license: "CC0", source: "https://commons.wikimedia.org/wiki/File:Building_Project_01.jpg" },
+  { file: "/img/ng/bricklayer.jpg", author: "Okhaifo", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Bricklayer_at_work.jpg" },
+  { file: "/img/ng/bricklayers-kwara.jpg", author: "Eyibeauty Oyelowo", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Bricklayers_on_site,_Kwara_State,_Nigeria.jpg" },
+  { file: "/img/ng/multistorey-frame.jpg", author: "Anasskoko", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Uncompleted_building_02.jpg" },
+  { file: "/img/ng/abuja-frame.jpg", author: "Anasskoko", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Building_construction_in_Abuja.jpg" },
+  { file: "/img/ng/abuja-frame-2.jpg", author: "Anasskoko", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Building_construction_in_Abuja_01.jpg" },
+  { file: "/img/ng/abuja-cladding.jpg", author: "Anasskoko", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Building_construction_in_Abuja_02.jpg" },
+  { file: "/img/ng/cement-mixing.jpg", author: "Iniabasi Udosen", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Labourers_mixing_Cement.jpg" },
+  { file: "/img/ng/block-moulding.jpg", author: "Iniabasi Udosen", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:A_man_moulding_cement_blocks.jpg" },
+  { file: "/img/ng/foundation-walls.jpg", author: "Tunde Sheriffdeen, Bello", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Construction_work_in_progress.jpg" },
+  { file: "/img/ng/trench-blocks.jpg", author: "Kenogenic", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Nigerian_bricklayers_(5).jpg" },
+  { file: "/img/ng/abuja-estate.jpg", author: "Paulo SP", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Stately_home_from_Katampe_Hill,_Abuja,_Nigeria_-_2019-11-08_-_IMG_9764.jpg" },
+  { file: "/img/ng/excavator.jpg", author: "Anasskoko", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Excavator_02.jpg" },
+  { file: "/img/ng/loader.jpg", author: "Anasskoko", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Loader_truck_01.jpg" },
+  { file: "/img/ng/storm-pipe.jpg", author: "Sammya Nig Ltd", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Storm_water_Pipe.jpg" },
+  { file: "/img/ng/roof-trusses.jpg", author: "Solaogedengbe", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Workers_on_-heavy_machinery.jpg" },
+  { file: "/img/ng/lagos-skyline.jpg", author: "Clara Sanchiz", license: "CC BY-SA 2.0", source: "https://commons.wikimedia.org/wiki/File:Lagos_skyline.jpg" },
+  { file: "/img/ng/welder-sparks.jpg", author: "Bayurzx", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:A_Dauntless_Nigerian_Welder_at_Work.jpg" },
+  { file: "/img/ng/gate-fabrication.jpg", author: "Benjamin Blessing", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:A_welder_making_a_building_gate_02.jpg" },
+  { file: "/img/ng/staircase-welding.jpg", author: "Benjamin Blessing", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:Welding_of_building_stair_case.jpg" },
+];
+
 export const certifications = [
-  { img: "/img/cert-cac.jpg", org: "Corporate Affairs Commission", title: "Certificate of Incorporation", meta: "RC 7101423 · 2023" },
+  { img: "/img/cert-cac.jpg", org: "Corporate Affairs Commission", title: "Certificate of Incorporation", meta: "RC 7101423 · 17 Aug 2023" },
   { img: "/img/cert-nate.jpg", org: "NATE", title: "Corporate Member", meta: "2024" },
   { img: "/img/cert-pti-hnd.jpg", org: "Petroleum Training Institute", title: "HND, Welding & Fabrication Engineering Technology", meta: "2018" },
   { img: "/img/cert-pti-qaqc.jpg", org: "Petroleum Training Institute", title: "QA/QC in Welding", meta: "2015" },
@@ -298,7 +352,7 @@ export const faqs = [
   { q: "What services does ESE J Engineering offer?", a: "Project management, mechanical works, certified welding & fabrication, plumbing, procurement and full-scale building construction for residential, commercial and industrial clients." },
   { q: "How do I request a quote?", a: "Send us your project details through the contact form, WhatsApp or email, or call +234 806 430 4119. We'll arrange a consultation and site assessment, then send a detailed proposal." },
   { q: "Do you provide support after a project is completed?", a: "Yes. After final testing and handover we provide post-completion support and maintenance where required." },
-  { q: "Are you a registered and certified company?", a: "Yes. We are incorporated with the Corporate Affairs Commission (RC 7101423), hold NATE corporate membership, and our team holds welding, QA/QC and HSE certifications." },
+  { q: "Are you a registered and certified company?", a: "Yes. ESE-J Engineering Company Limited is a private company limited by shares, incorporated with the Corporate Affairs Commission on 17 August 2023 under the Companies and Allied Matters Act 2020 (RC 7101423, TIN 31505531-0001). We are a NATE corporate member, and our team holds welding, QA/QC and HSE certifications." },
   { q: "How do you manage safety on site?", a: "Every project follows strict HSE protocols, with trained personnel, proper PPE, and regular inspections and quality checks throughout execution." },
 ];
 

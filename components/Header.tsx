@@ -113,7 +113,7 @@ export default function Header() {
                 <Link href="/services" className="mega__all">View all services <Icon name="arrow" size={16} /></Link>
               </div>
               <Link href="/contact" className="mega__feature">
-                <Image src="/img/stock/engineers-pointing.jpg" alt="" fill sizes="340px" />
+                <Image src="/img/ng/bricklayers-kwara.jpg" alt="" fill sizes="340px" />
                 <span className="mega__feature-body">
                   <small>Have a project in mind?</small>
                   <strong>Request a free consultation</strong>
@@ -146,7 +146,7 @@ export default function Header() {
                 <div><strong>10+</strong><span>Professionals</span></div>
               </div>
               <a href={company.profilePdf} className="mega__feature mega__feature--dark" target="_blank" rel="noopener">
-                <Image src="/img/stock/hero-site-team.jpg" alt="" fill sizes="300px" />
+                <Image src="/img/team-crew.jpg" alt="" fill sizes="300px" />
                 <span className="mega__feature-body">
                   <small>Company profile</small>
                   <strong>Download our profile (PDF)</strong>

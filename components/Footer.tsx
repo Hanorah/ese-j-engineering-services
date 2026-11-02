@@ -26,6 +26,10 @@ export default function Footer() {
           <div className="footer__brand">
             <Brand light />
             <p>The No.1 place for all engineering needs. Engineering &amp; construction across Nigeria since 2009.</p>
+            <p className="footer__legal">
+              {company.legalName} is a private company limited by shares, registered with the Corporate Affairs
+              Commission. RC {company.rcNumber} · TIN {company.tin}
+            </p>
           </div>
           <div className="footer__col">
             <h4>Company</h4>
@@ -53,8 +57,8 @@ export default function Footer() {
         <div className="footer__big" aria-hidden="true">ESE J ENGINEERING</div>
 
         <div className="footer__bottom">
-          <span>© {new Date().getFullYear()} ESE J Engineering Ltd. RC 7101423. All rights reserved.</span>
-          <a href="#top">Back to top ↑</a>
+          <span>© {new Date().getFullYear()} {company.legalName}. RC {company.rcNumber}. All rights reserved.</span>
+          <span className="footer__links"><Link href="/credits">Photo credits</Link><a href="#top">Back to top ↑</a></span>
         </div>
       </div>
     </footer>

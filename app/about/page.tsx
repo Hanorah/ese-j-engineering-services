@@ -8,6 +8,7 @@ import ClientLogos from "@/components/ClientLogos";
 import ProcessSteps from "@/components/ProcessSteps";
 import CtaBanner from "@/components/CtaBanner";
 import Icon from "@/components/Icon";
+import CompanyFacts from "@/components/CompanyFacts";
 import { stats, timeline } from "@/lib/content";
 
 export const metadata: Metadata = pageMetadata({
@@ -21,7 +22,7 @@ export default function AboutPage() {
     <>
       <JsonLd data={breadcrumbJsonLd([{ name: "About us", path: "/about" }])} />
       <PageHero
-        image="/img/stock/hero-site-team.jpg"
+        image="/img/team-crew.jpg"
         eyebrow="About ESE J"
         title={<>A brief story about <em>the company</em></>}
         text="Founded in 2009 on professionalism, technical excellence and an unwavering commitment to client satisfaction."
@@ -33,8 +34,8 @@ export default function AboutPage() {
         <div className="container">
           <div className="story">
             <div className="story__media reveal">
-              <figure className="story__img story__img--a"><Image src="/img/team.jpg" alt="ESE J team in uniform with hard hats" fill sizes="(max-width: 900px) 92vw, 30vw" /></figure>
-              <figure className="story__img story__img--b"><Image src="/img/stock/welding.jpg" alt="" fill sizes="(max-width: 900px) 60vw, 20vw" /></figure>
+              <figure className="story__img story__img--a"><Image src="/img/site-team.jpg" alt="ESE J site team" fill sizes="(max-width: 900px) 92vw, 30vw" /></figure>
+              <figure className="story__img story__img--b"><Image src="/img/ng/welder-sparks.jpg" alt="" fill sizes="(max-width: 900px) 60vw, 20vw" /></figure>
               <div className="story__badge"><strong>Since</strong><span>2009</span></div>
             </div>
             <div className="story__text">
@@ -74,7 +75,7 @@ export default function AboutPage() {
               <p>To deliver high-quality, reliable and innovative engineering solutions that exceed client expectations, while upholding the highest standards of safety, integrity and professionalism in every project we undertake.</p>
             </article>
             <figure className="mv__photo reveal">
-              <Image src="/img/stock/cranes-sky.jpg" alt="" fill sizes="(max-width: 900px) 92vw, 30vw" />
+              <Image src="/img/ng/crane-abuja.jpg" alt="" fill sizes="(max-width: 900px) 92vw, 30vw" />
             </figure>
             <article className="mv__card mv__card--accent reveal">
               <span className="mv__icon"><Icon name="eye" size={26} /></span>
@@ -131,12 +132,19 @@ export default function AboutPage() {
         </div>
       </section>
 
+<section className="section" id="registration">
+        <div className="container">
+          <SectionHead label="Company registration" strong="Registered," light="certified and accountable" />
+          <CompanyFacts />
+        </div>
+      </section>
+
       {/* ---------- Team culture ---------- */}
-      <section className="section">
+      <section className="section section--white">
         <div className="container">
           <div className="culture">
             <figure className="culture__img reveal">
-              <Image src="/img/site-team.jpg" alt="ESE J site team" fill sizes="(max-width: 900px) 92vw, 45vw" />
+              <Image src="/img/team.jpg" alt="The ESE J crew in blue coveralls with hard hats" fill sizes="(max-width: 900px) 92vw, 45vw" />
             </figure>
             <div className="culture__body">
               <span className="shead__label reveal">Our team</span>

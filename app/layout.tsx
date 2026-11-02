@@ -21,7 +21,7 @@ const sans = Inter_Tight({ subsets: ["latin"], variable: "--font-sans", display:
 const serif = Instrument_Serif({ subsets: ["latin"], weight: "400", style: ["normal", "italic"], variable: "--font-serif", display: "swap" });
 
 const description =
-  "ESE J Engineering Ltd is an engineering & construction company in Benin City, Edo State, serving all of Nigeria since 2009: project management, mechanical works, certified welding & fabrication, plumbing, procurement and building construction.";
+  "ESE-J Engineering Company Limited (RC 7101423) is a CAC-registered engineering & construction company in Benin City, Edo State, serving all of Nigeria since 2009: project management, mechanical works, certified welding & fabrication, plumbing, procurement and building construction.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -43,12 +43,12 @@ export const metadata: Metadata = {
     url: "/",
     siteName: "ESE J Engineering Ltd",
     title: "ESE J Engineering Ltd | Engineering & Construction in Nigeria",
-    description: "The No.1 place for all engineering needs. Engineering & construction across Nigeria since 2009.",
+    description: "CAC-registered engineering & construction company (RC 7101423) in Benin City, serving all of Nigeria since 2009.",
   },
   twitter: {
     card: "summary_large_image",
     title: "ESE J Engineering Ltd",
-    description: "The No.1 place for all engineering needs. Engineering & construction across Nigeria since 2009.",
+    description: "CAC-registered engineering & construction company (RC 7101423) in Benin City, serving all of Nigeria since 2009.",
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 } },
   formatDetection: { telephone: true, email: true, address: true },

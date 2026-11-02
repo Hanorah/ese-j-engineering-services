@@ -6,11 +6,12 @@ import PageHero from "@/components/PageHero";
 import SectionHead from "@/components/SectionHead";
 import CtaBanner from "@/components/CtaBanner";
 import Icon from "@/components/Icon";
+import CompanyFacts from "@/components/CompanyFacts";
 import { certifications } from "@/lib/content";
 
 export const metadata: Metadata = pageMetadata({
   title: "Certifications & HSE",
-  description: "ESE J Engineering registrations, welding and QA/QC credentials, and health, safety & environment certifications.",
+  description: "ESE-J Engineering Company Limited: CAC Certificate of Incorporation (RC 7101423), NATE membership, welding and QA/QC credentials, and HSE certifications.",
   path: "/certifications",
 });
 
@@ -26,7 +27,7 @@ export default function CertificationsPage() {
     <>
       <JsonLd data={breadcrumbJsonLd([{ name: "Certifications & HSE", path: "/certifications" }])} />
       <PageHero
-        image="/img/stock/site-worker.jpg"
+        image="/img/ng/bricklayers-kwara.jpg"
         eyebrow="Certifications & HSE"
         title={<>Registered, certified and <em>safety-first</em></>}
         text="Our registrations and professional credentials in engineering, welding, QA/QC and health & safety."
@@ -48,7 +49,14 @@ export default function CertificationsPage() {
         </div>
       </section>
 
-      <section className="section section--white">
+      <section className="section section--white" id="registration">
+        <div className="container">
+          <SectionHead label="Company registration" strong="Registered," light="certified and accountable" />
+          <CompanyFacts />
+        </div>
+      </section>
+
+      <section className="section">
         <div className="container">
           <SectionHead label="Credentials" strong="Our certifications" light="and registrations" text="Tap any certificate to view the full document." />
           <div className="cert-grid">

@@ -64,7 +64,7 @@ export default async function ServicePage({ params }: Props) {
               ))}
             </div>
             <div className="side-card side-card--dark">
-              <Image src="/img/stock/technician-portrait.jpg" alt="" fill sizes="340px" />
+              <Image src="/img/team-crew.jpg" alt="" fill sizes="340px" />
               <div className="side-card__body">
                 <p>Need help with {s.title.toLowerCase()}?</p>
                 <a href={company.phoneHref}><Icon name="phone" size={18} /> {company.phone}</a>

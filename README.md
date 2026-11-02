@@ -28,7 +28,7 @@ Deploy by importing the repo into Vercel (zero config).
 | `/about` | Story, mission & vision, CEO message (`#leadership`), timeline, team, process (`#process`) |
 | `/services` | All services |
 | `/services/[slug]` | One page per service (6), generated from `lib/content.ts` |
-| `/projects` | Filterable gallery of real site photos |
+| `/gallery` | Filterable gallery + before & after |
 | `/certifications` | HSE commitments + certificate scans |
 | `/contact` | Contact cards, quote form (WhatsApp / email), FAQ |
 
@@ -40,7 +40,9 @@ Deploy by importing the repo into Vercel (zero config).
 | Header + mega menu + mobile drawer | `components/Header.tsx` |
 | Design tokens (colours, radius, fonts) and all styles | `app/globals.css` (top `:root` block) |
 | Company photos & certificate scans | `public/img/` |
-| Stock photos (Unsplash, free licence) | `public/img/stock/` |
+| Nigerian site photos (Wikimedia Commons, credited on `/credits`) | `public/img/ng/`, credits in `lib/content.ts` → `photoCredits` |
+| Before & after house photos (section hidden until filled) | `lib/content.ts` → `beforeAfter` |
+| Company registration (CAC, RC, TIN) | `lib/content.ts` → `company`, shown by `components/CompanyFacts.tsx` |
 | Client logos | `public/img/clients/` |
 | Downloadable company profile | `public/ese-j-company-profile.pdf` |
 

@@ -9,7 +9,7 @@ export default function CtaBanner() {
       <div className="container">
         <div className="cta reveal">
           <div className="cta__img">
-            <Image src="/img/stock/towers-cranes.jpg" alt="" fill sizes="(max-width: 900px) 100vw, 50vw" />
+            <Image src="/img/ng/abuja-frame.jpg" alt="" fill sizes="(max-width: 900px) 100vw, 50vw" />
           </div>
           <div className="cta__body">
             <h2>

@@ -164,7 +164,8 @@ h2:has(> span:first-child) { font-weight: 400; color: var(--text-2); }
 .pre__progress i { display: block; height: 100%; background: var(--accent); transform-origin: 0 50%; animation: preGrowX 2.1s 0.1s cubic-bezier(0.65, 0, 0.35, 1) both; }
 
 /* hero intros wait for the curtain on the first view */
-.intro-play .hhero__title, .intro-play .phero__content { animation-delay: 2.75s; }
+.intro-play .hhero--first .hhero__title, .intro-play .phero__content { animation-delay: 2.75s; }
+.intro-play .hhero--first .hhero__slide.is-active img, .intro-play .hhero--first .hhero__ring circle { animation-delay: 2.4s; }
 .intro-play .hhero__content > .pill, .intro-play .hhero__lead, .intro-play .hhero__actions { animation: titleIn 1s 2.85s var(--ease) both; }
 
 /* =====================================================================
@@ -246,9 +247,11 @@ h2:has(> span:first-child) { font-weight: 400; color: var(--text-2); }
 .hhero { padding: 12px; }
 .hhero__frame { position: relative; overflow: hidden; isolation: isolate; height: max(640px, min(100svh - 24px, 900px)); border-radius: var(--radius); background: var(--ink); color: var(--white); }
 .hhero__slide { position: absolute; inset: 0; z-index: -2; opacity: 0; transition: opacity 1.4s ease; }
-.hhero__slide img { object-fit: cover; transform: scale(1.12); transition: transform 8s linear; }
+.hhero__slide img { object-fit: cover; }
 .hhero__slide.is-active { opacity: 1; }
-.hhero__slide.is-active img { transform: scale(1); }
+/* a keyframe (not a transition) so the slow zoom also plays on the opening slide at page load */
+.hhero__slide.is-active img { animation: heroZoom 8s linear both; }
+@keyframes heroZoom { from { transform: scale(1.12); } to { transform: scale(1); } }
 .hhero__shade { position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(6, 16, 28, 0.82) 0%, rgba(6, 16, 28, 0.35) 55%, rgba(6, 16, 28, 0.15) 100%), linear-gradient(0deg, rgba(6, 16, 28, 0.75), transparent 45%); }
 .hhero__content { position: absolute; left: clamp(20px, 5vw, 70px); bottom: clamp(36px, 7vw, 80px); max-width: 760px; padding-right: 20px; }
 .hhero__title { margin: 22px 0 18px; font-size: clamp(2.5rem, 5.6vw, 5rem); font-weight: 500; line-height: 1.02; letter-spacing: -0.045em; animation: titleIn 1s var(--ease) both; }
@@ -799,3 +802,61 @@ a.ccards__item:hover small { color: var(--muted-light); }
 }
 
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+/* =====================================================================
+   Company registration facts
+   ===================================================================== */
+.facts { display: grid; grid-template-columns: minmax(220px, 300px) 1fr; gap: clamp(24px, 4vw, 56px); align-items: start; padding: clamp(20px, 3vw, 36px); border-radius: var(--radius); background: radial-gradient(ellipse at 100% 0%, rgba(29, 81, 169, 0.5), transparent 55%), var(--ink); color: var(--white); }
+.facts__cert { position: relative; aspect-ratio: 527 / 631; border: 0; padding: 0; border-radius: var(--radius-sm); overflow: hidden; background: var(--white); cursor: zoom-in; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35); transform: rotate(-2deg); transition: transform 0.5s var(--ease); }
+.facts__cert:hover { transform: rotate(0deg) scale(1.02); }
+.facts__cert img { object-fit: cover; }
+.facts__body { display: grid; gap: 18px; }
+.facts__badge { justify-self: start; display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 999px; background: rgba(255, 209, 36, 0.14); color: var(--accent); font-size: 0.82rem; font-weight: 600; }
+.facts h3 { font-size: clamp(1.4rem, 2.4vw, 2rem); }
+.facts dl { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 28px; margin: 0; }
+.facts dl div { padding: 14px 0; border-bottom: 1px solid var(--line-light); }
+.facts dt { color: var(--muted-light); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.facts dd { margin: 4px 0 0; font-weight: 600; }
+.facts__verify { justify-self: start; display: inline-flex; align-items: center; gap: 8px; color: var(--accent); font-weight: 600; }
+.facts__verify:hover { text-decoration: underline; }
+
+/* =====================================================================
+   Before & after slider
+   ===================================================================== */
+.ba-grid { display: grid; gap: 28px; }
+.ba { display: grid; gap: 16px; }
+.ba__frame { --pos: 50%; position: relative; aspect-ratio: 16 / 9; border-radius: var(--radius); overflow: hidden; background: var(--ink); user-select: none; }
+.ba__frame img { object-fit: cover; }
+.ba__before { position: absolute; inset: 0; clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
+.ba__handle { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 3px; translate: -50% 0; background: var(--white); pointer-events: none; }
+.ba__handle span { position: absolute; top: 50%; left: 50%; translate: -50% -50%; display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; background: var(--accent); color: var(--ink); font-weight: 700; letter-spacing: 0.1em; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); }
+.ba input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; }
+.ba input:focus-visible ~ .ba__handle span, .ba__frame:has(input:focus-visible) .ba__handle span { outline: 3px solid var(--white); outline-offset: 3px; }
+.ba__tag { position: absolute; top: 18px; padding: 6px 14px; border-radius: 999px; background: rgba(11, 27, 42, 0.7); color: var(--white); font-size: 0.8rem; font-weight: 600; backdrop-filter: blur(6px); pointer-events: none; }
+.ba__tag--before { left: 18px; }
+.ba__tag--after { right: 18px; background: var(--accent); color: var(--ink); }
+.ba__sample { position: absolute; left: 50%; bottom: 16px; translate: -50% 0; padding: 6px 14px; border-radius: 999px; background: #c62828; color: var(--white); font-size: 0.78rem; font-weight: 600; pointer-events: none; white-space: nowrap; }
+.ba figcaption { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
+.ba figcaption strong { font-size: 1.15rem; }
+.ba figcaption span { color: var(--muted); }
+.ba figcaption p { flex-basis: 100%; color: var(--muted); }
+
+/* footer legal + credits page */
+.footer__brand .footer__legal { margin-top: 12px; font-size: 0.85rem; }
+.footer__links { display: inline-flex; gap: 22px; }
+.credits h1 { font-size: clamp(2.2rem, 4vw, 3.2rem); margin: 80px 0 16px; }
+.credits p { color: var(--muted); max-width: 70ch; }
+.credits ul { list-style: none; padding: 0; margin: 28px 0 36px; display: grid; gap: 10px; }
+.credits li { display: flex; flex-wrap: wrap; gap: 4px 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.credits li a { font-weight: 600; color: var(--blue); }
+.credits li span { color: var(--muted); }
+
+@media (max-width: 980px) {
+  .facts { grid-template-columns: 1fr; }
+  .facts__cert { width: min(300px, 80%); justify-self: center; }
+}
+@media (max-width: 640px) {
+  .facts dl { grid-template-columns: 1fr; }
+  .ba__frame { aspect-ratio: 4 / 3; }
+  .ba__sample { white-space: normal; text-align: center; width: max-content; max-width: 90%; }
+}

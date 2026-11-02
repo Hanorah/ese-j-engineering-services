@@ -5,7 +5,7 @@ import Icon from "@/components/Icon";
 export default function NotFound() {
   return (
     <PageHero
-      image="/img/stock/building-frame.jpg"
+      image="/img/ng/frame-street-2.jpg"
       eyebrow="404"
       title={<>This page is still <em>under construction</em></>}
       text="The page you're looking for doesn't exist or has moved."

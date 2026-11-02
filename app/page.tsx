@@ -7,6 +7,7 @@ import ClientLogos from "@/components/ClientLogos";
 import ProcessSteps from "@/components/ProcessSteps";
 import CtaBanner from "@/components/CtaBanner";
 import Icon from "@/components/Icon";
+import BeforeAfterSection from "@/components/BeforeAfterSection";
 import { certifications, galleryHighlights, services, stats, strengths } from "@/lib/content";
 
 export default function Home() {
@@ -67,7 +68,7 @@ export default function Home() {
                 </Link>
               </div>
               <figure className="backbone__img backbone__img--a reveal">
-                <Image src="/img/stock/engineers-pointing.jpg" alt="Engineers reviewing a construction site" fill sizes="(max-width: 900px) 92vw, 34vw" />
+                <Image src="/img/team-crew.jpg" alt="The ESE J Engineering team in blue coveralls holding hard hats" fill sizes="(max-width: 900px) 92vw, 34vw" />
               </figure>
               <figure className="backbone__img backbone__img--b reveal">
                 <Image src="/img/pipeline-crew.jpg" alt="ESE J crew on a pipeline project" fill sizes="(max-width: 900px) 92vw, 24vw" />
@@ -81,7 +82,7 @@ export default function Home() {
       {/* ---------- Big image band (ZOD-style) ---------- */}
       <section className="band">
         <div className="band__frame">
-          <Image src="/img/stock/rebar-workers.jpg" alt="" fill sizes="100vw" />
+          <Image src="/img/ng/lagos-skyline.jpg" alt="" fill sizes="100vw" />
           <div className="band__shade" />
           <div className="band__content container">
             <p className="band__kicker reveal">Built on purpose. Built to deliver.</p>
@@ -103,7 +104,7 @@ export default function Home() {
           <SectionHead label="Why ESE J" strong="What sets us" light="apart from the rest" />
           <div className="why">
             <figure className="why__photo reveal">
-              <Image src="/img/stock/electrician.jpg" alt="Engineer in a hard hat working on site equipment" fill sizes="(max-width: 900px) 92vw, 40vw" />
+              <Image src="/img/ng/bricklayer.jpg" alt="Bricklayer laying blockwork on a Nigerian building site" fill sizes="(max-width: 900px) 92vw, 40vw" />
               <div className="why__photo-card">
                 <strong data-count="16" data-suffix="+">16+</strong>
                 <span>Years of unmatched service delivery across Nigeria</span>
@@ -152,6 +153,8 @@ export default function Home() {
         </div>
       </section>
 
+      <BeforeAfterSection white />
+
       {/* ---------- Certifications teaser ---------- */}
       <section className="section section--white section--tight-top">
         <div className="container">
@@ -159,7 +162,7 @@ export default function Home() {
             <div className="certband__text">
               <span className="shead__label reveal">Certified &amp; registered</span>
               <h2 className="reveal"><span>Safety and quality,</span> on paper and on site</h2>
-              <p className="reveal">CAC registered (RC 7101423), NATE corporate member, with certified welding, QA/QC and HSE credentials across our team.</p>
+              <p className="reveal">ESE-J Engineering Company Limited is a private limited company registered with the Corporate Affairs Commission (RC 7101423) and a NATE corporate member, with certified welding, QA/QC and HSE credentials across our team.</p>
               <Link href="/certifications" className="btn btn--dark reveal">
                 View certifications <span className="btn__icon"><Icon name="arrowUpRight" size={16} /></span>
               </Link>

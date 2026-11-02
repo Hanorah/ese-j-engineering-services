@@ -6,6 +6,7 @@ import SectionHead from "@/components/SectionHead";
 import Gallery from "@/components/Gallery";
 import ClientLogos from "@/components/ClientLogos";
 import CtaBanner from "@/components/CtaBanner";
+import BeforeAfterSection from "@/components/BeforeAfterSection";
 import { stats } from "@/lib/content";
 
 export const metadata: Metadata = pageMetadata({
@@ -19,7 +20,7 @@ export default function GalleryPage() {
     <>
       <JsonLd data={breadcrumbJsonLd([{ name: "Gallery", path: "/gallery" }])} />
       <PageHero
-        image="/img/stock/steel-structure.jpg"
+        image="/img/ng/multistorey-frame.jpg"
         eyebrow="Gallery"
         title={<>Engineering, built and <em>delivered</em></>}
         text="Structures, piping, plumbing, fabrication and supply: a visual look at the kind of work we deliver across Nigeria."
@@ -44,6 +45,7 @@ export default function GalleryPage() {
         </div>
       </section>
 
+      <BeforeAfterSection white />
       <ClientLogos />
       <CtaBanner />
     </>
