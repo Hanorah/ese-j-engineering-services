@@ -26,8 +26,10 @@ export const company = {
   act: "Companies and Allied Matters Act 2020",
   founded: 2009,
   profilePdf: "/ese-j-company-profile.pdf",
-  /** Add social profile URLs here as they're created (LinkedIn, Facebook, Instagram, Google Business). */
-  socials: [] as string[],
+  /** Official profiles: shown in the footer and linked to the business in Google (sameAs). Add LinkedIn, Facebook and Google Business Profile links as they are created. */
+  socials: [
+    { name: "TikTok", url: "https://www.tiktok.com/@esejengineering" },
+  ] as { name: string; url: string }[],
 };
 
 export const fullAddress = [company.address, company.city, company.state, company.country].filter(Boolean).join(", ");

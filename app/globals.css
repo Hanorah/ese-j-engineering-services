@@ -880,3 +880,6 @@ a.ccards__item:hover small { color: var(--muted-light); }
   .mapcard, .local { grid-template-columns: 1fr; }
   .mapcard__map, .local__map { min-height: 320px; }
 }
+.footer__socials { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.footer__col .footer__socials a { padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line-light); font-size: 0.85rem; }
+.footer__col .footer__socials a:hover { border-color: var(--accent); color: var(--accent); }

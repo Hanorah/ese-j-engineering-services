@@ -52,6 +52,13 @@ export default function Footer() {
             <a href={`mailto:${company.email}`}><Icon name="mail" size={16} /> {company.email}</a>
             <a href={maps.mapUrl} target="_blank" rel="noopener"><Icon name="pin" size={16} /> {fullAddress}</a>
             <a href={`https://${company.website}`}><Icon name="globe" size={16} /> {company.website}</a>
+            {company.socials.length > 0 && (
+              <span className="footer__socials">
+                {company.socials.map((s) => (
+                  <a key={s.url} href={s.url} target="_blank" rel="noopener me">{s.name}</a>
+                ))}
+              </span>
+            )}
           </div>
         </div>
 

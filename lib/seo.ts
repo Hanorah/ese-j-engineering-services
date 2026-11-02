@@ -96,7 +96,7 @@ export function businessJsonLd() {
       areaServed: "NG",
       availableLanguage: ["English"],
     },
-    ...(company.socials.length && { sameAs: company.socials }),
+    ...(company.socials.length && { sameAs: company.socials.map((s) => s.url) }),
   };
 }
 
