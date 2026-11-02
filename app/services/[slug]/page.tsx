@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return s
     ? pageMetadata({
         title: `${s.title} in Nigeria`,
-        description: `${s.intro} ${s.offerings.slice(0, 4).join(", ")}. ESE J Engineering Ltd, since 2009.`,
+        description: `${s.intro} ${s.offerings.slice(0, 4).join(", ")}. ESE-J Engineering Ltd, since 2009.`,
         path: `/services/${s.slug}`,
       })
     : {};
@@ -103,8 +103,8 @@ export default async function ServicePage({ params }: Props) {
 
             {s.realPhoto && (
               <figure className="sdetail__real reveal" data-full={s.realPhoto}>
-                <Image src={s.realPhoto} alt={`ESE J ${s.title.toLowerCase()} on site`} fill sizes="(max-width: 1000px) 92vw, 60vw" />
-                <figcaption><span>From our sites</span>ESE J {s.title.toLowerCase()} in action</figcaption>
+                <Image src={s.realPhoto} alt={`ESE-J ${s.title.toLowerCase()} on site`} fill sizes="(max-width: 1000px) 92vw, 60vw" />
+                <figcaption><span>From our sites</span>ESE-J {s.title.toLowerCase()} in action</figcaption>
               </figure>
             )}
 

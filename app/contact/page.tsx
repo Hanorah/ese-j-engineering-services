@@ -7,18 +7,18 @@ import QuoteForm from "@/components/QuoteForm";
 import Faq from "@/components/Faq";
 import Icon from "@/components/Icon";
 import CompanyFacts from "@/components/CompanyFacts";
-import { company, fullAddress } from "@/lib/content";
+import { company, fullAddress, maps } from "@/lib/content";
 
 export const metadata: Metadata = pageMetadata({
   title: "Contact Us",
-  description: "Get a quote from ESE J Engineering Ltd. Call +234 806 430 4119 or email esejengineering@gmail.com.",
+  description: "Get a quote from ESE-J Engineering Ltd. Call +234 806 430 4119 or email esejengineering@gmail.com.",
   path: "/contact",
 });
 
 const cards = [
   { icon: "phone" as const, label: "Call us", value: company.phone, href: company.phoneHref },
   { icon: "mail" as const, label: "Email us", value: company.email, href: `mailto:${company.email}` },
-  { icon: "pin" as const, label: "Visit us", value: fullAddress },
+  { icon: "pin" as const, label: "Visit us", value: fullAddress, href: maps.mapUrl },
   { icon: "globe" as const, label: "Website", value: company.website, href: `https://${company.website}` },
 ];
 
@@ -46,7 +46,7 @@ export default function ContactPage() {
                 </>
               );
               return c.href ? (
-                <a key={c.label} href={c.href} className="ccards__item reveal">{inner}</a>
+                <a key={c.label} href={c.href} className="ccards__item reveal" {...(c.href.startsWith("http") && { target: "_blank", rel: "noopener" })}>{inner}</a>
               ) : (
                 <div key={c.label} className="ccards__item reveal">{inner}</div>
               );
@@ -70,6 +70,33 @@ export default function ContactPage() {
             <div className="contact__form reveal">
               <QuoteForm />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--tight" id="location">
+        <div className="container">
+          <div className="mapcard reveal">
+            <div className="mapcard__body">
+              <span className="shead__label">Find us</span>
+              <h2><span>Our office in</span> Benin City</h2>
+              <address>{fullAddress}</address>
+              <p>Visits by appointment. Call ahead and we&apos;ll meet you at the office or on your site.</p>
+              <div className="mapcard__actions">
+                <a href={maps.directionsUrl} target="_blank" rel="noopener" className="btn btn--accent">
+                  Get directions <span className="btn__icon"><Icon name="arrowUpRight" size={16} /></span>
+                </a>
+                <a href={company.phoneHref} className="btn btn--outline"><Icon name="phone" size={18} /> {company.phone}</a>
+              </div>
+            </div>
+            <iframe
+              className="mapcard__map"
+              src={maps.embedUrl}
+              title={`Map showing ${company.legalName}, ${fullAddress}`}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
           </div>
         </div>
       </section>

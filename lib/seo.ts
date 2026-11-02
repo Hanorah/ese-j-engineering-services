@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { company, faqs, services } from "./content";
+import { company, faqs, maps, services } from "./content";
 
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? company.url).replace(/\/$/, "");
 export const abs = (path = "/") => `${SITE_URL}${path}`;
 
 export const keywords = [
+  "ESE-J Engineering",
   "ESE J Engineering",
   "ESE-J Engineering Company Limited",
   "RC 7101423",
@@ -37,7 +38,7 @@ export function businessJsonLd() {
     "@id": businessId,
     name: company.name,
     legalName: company.legalName,
-    alternateName: ["ESE J Engineering", "ESE-J Engineering", "ESE-J Engineering Company Limited", "ESE J Engineering Services Ltd"],
+    alternateName: ["ESE-J Engineering", "ESE J Engineering", "ESE J Engineering Ltd", "ESEJ Engineering", "ESE-J Engineering Ltd"],
     url: SITE_URL,
     logo: abs("/brand/esej-mark.svg"),
     image: abs("/img/team-crew.jpg"),
@@ -48,6 +49,7 @@ export function businessJsonLd() {
     founder: { "@type": "Person", name: "Ese Joy", jobTitle: "CEO" },
     telephone: "+2348064304119",
     email: company.email,
+    hasMap: maps.mapUrl,
     address: {
       "@type": "PostalAddress",
       streetAddress: company.address,

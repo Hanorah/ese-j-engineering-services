@@ -3,7 +3,7 @@ import LogoMark from "./LogoMark";
 const LETTERS = ["e", "s", "e", ".", "j"];
 
 /**
- * ZOD-style opening curtain, built on the ESE J mark: the column rises, beams slide
+ * ZOD-style opening curtain, built on the ESE-J mark: the column rises, beams slide
  * out floor by floor, the jib reaches across, the cable drops and the hook swings in,
  * while the wordmark letters drop into place. Then the curtain lifts.
  * Pure CSS so it plays before hydration; the inline script in the layout skips it

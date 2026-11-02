@@ -21,7 +21,7 @@ export default function QuoteForm({ defaultService }: { defaultService?: string 
       return;
     }
 
-    const body = `Hello ESE J Engineering,\n\nName: ${name}\nContact: ${contact}\nService: ${data.get("service")}${location ? `\nLocation: ${location}` : ""}\n\n${message}`;
+    const body = `Hello ESE-J Engineering,\n\nName: ${name}\nContact: ${contact}\nService: ${data.get("service")}${location ? `\nLocation: ${location}` : ""}\n\n${message}`;
     if (via === "email") {
       window.location.href = `mailto:${company.email}?subject=${encodeURIComponent(`Quote request: ${data.get("service")}`)}&body=${encodeURIComponent(body)}`;
     } else {

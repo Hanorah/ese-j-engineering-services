@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { JIB_PATH } from "@/components/LogoMark";
 
-export const alt = "ESE J Engineering Ltd: engineering & construction in Nigeria since 2009";
+export const alt = "ESE-J Engineering Ltd: engineering & construction in Nigeria since 2009";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

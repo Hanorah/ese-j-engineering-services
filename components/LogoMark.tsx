@@ -1,5 +1,5 @@
 /**
- * ESE J mark: a tower crane drawn as the letters E and J. The mast and three beams
+ * ESE-J mark: a tower crane drawn as the letters E and J. The mast and three beams
  * form the E; the top beam runs on as a lattice jib (tied back to the mast peak),
  * and the J is the crane hook hanging from its trolley.
  * Steel uses --mark-a, cable + hook use --mark-b. Part classes drive the preloader build.

@@ -13,7 +13,7 @@ import { stats, timeline } from "@/lib/content";
 
 export const metadata: Metadata = pageMetadata({
   title: "About Us",
-  description: "Founded in 2009, ESE J Engineering Ltd delivers engineering and construction across Nigeria with professionalism, quality and integrity.",
+  description: "Founded in 2009, ESE-J Engineering Ltd delivers engineering and construction across Nigeria with professionalism, quality and integrity.",
   path: "/about",
 });
 
@@ -23,7 +23,7 @@ export default function AboutPage() {
       <JsonLd data={breadcrumbJsonLd([{ name: "About us", path: "/about" }])} />
       <PageHero
         image="/img/team-crew.jpg"
-        eyebrow="About ESE J"
+        eyebrow="About ESE-J"
         title={<>A brief story about <em>the company</em></>}
         text="Founded in 2009 on professionalism, technical excellence and an unwavering commitment to client satisfaction."
         crumbs={[{ label: "About us" }]}
@@ -34,7 +34,7 @@ export default function AboutPage() {
         <div className="container">
           <div className="story">
             <div className="story__media reveal">
-              <figure className="story__img story__img--a"><Image src="/img/site-team.jpg" alt="ESE J site team" fill sizes="(max-width: 900px) 92vw, 30vw" /></figure>
+              <figure className="story__img story__img--a"><Image src="/img/site-team.jpg" alt="ESE-J site team" fill sizes="(max-width: 900px) 92vw, 30vw" /></figure>
               <figure className="story__img story__img--b"><Image src="/img/ng/welder-sparks.jpg" alt="" fill sizes="(max-width: 900px) 60vw, 20vw" /></figure>
               <div className="story__badge"><strong>Since</strong><span>2009</span></div>
             </div>
@@ -42,7 +42,7 @@ export default function AboutPage() {
               <span className="shead__label reveal">Who we are</span>
               <h2 className="reveal"><span>A leading force in engineering</span> and construction across Nigeria</h2>
               <p className="reveal">
-                With over 16 years of unmatched service delivery, ESE J Engineering Ltd has executed diverse projects
+                With over 16 years of unmatched service delivery, ESE-J Engineering Ltd has executed diverse projects
                 spanning mechanical works, civil construction, plumbing and welding, powered by a team of more than 10
                 highly skilled professionals who bring expertise, dedication and precision to every job.
               </p>
@@ -91,7 +91,7 @@ export default function AboutPage() {
         <div className="container">
           <div className="welcome reveal">
             <figure className="welcome__photo">
-              <Image src="/img/ceo.jpg" alt="Ese Joy, CEO of ESE J Engineering Ltd" fill sizes="(max-width: 900px) 92vw, 36vw" />
+              <Image src="/img/ceo.jpg" alt="Ese Joy, CEO of ESE-J Engineering Ltd" fill sizes="(max-width: 900px) 92vw, 36vw" />
             </figure>
             <div className="welcome__body">
               <span className="shead__label shead__label--light">Welcome message</span>
@@ -99,7 +99,7 @@ export default function AboutPage() {
                 “Every project is an opportunity to build lasting value for our clients, our communities, and our country.”
               </blockquote>
               <p>
-                Welcome to ESE J Engineering Ltd. Since our inception in 2009, our mission has been clear: to deliver
+                Welcome to ESE-J Engineering Ltd. Since our inception in 2009, our mission has been clear: to deliver
                 exceptional engineering solutions grounded in professionalism, quality and integrity. Over the years, we
                 have grown steadily, not just in capacity, but in reputation, thanks to the trust of our clients and the
                 dedication of our passionate team.
@@ -107,7 +107,7 @@ export default function AboutPage() {
               <p>I invite you to explore our profile, get to know our services, and see how we can collaborate to bring your next project to life.</p>
               <div className="welcome__sign">
                 <span className="signature">Ese Joy</span>
-                <span className="welcome__role">CEO, ESE J Engineering Ltd</span>
+                <span className="welcome__role">CEO, ESE-J Engineering Ltd</span>
               </div>
             </div>
           </div>
@@ -144,7 +144,7 @@ export default function AboutPage() {
         <div className="container">
           <div className="culture">
             <figure className="culture__img reveal">
-              <Image src="/img/team.jpg" alt="The ESE J crew in blue coveralls with hard hats" fill sizes="(max-width: 900px) 92vw, 45vw" />
+              <Image src="/img/team.jpg" alt="The ESE-J crew in blue coveralls with hard hats" fill sizes="(max-width: 900px) 92vw, 45vw" />
             </figure>
             <div className="culture__body">
               <span className="shead__label reveal">Our team</span>

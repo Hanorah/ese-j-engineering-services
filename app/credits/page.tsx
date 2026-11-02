@@ -15,7 +15,7 @@ export default function CreditsPage() {
       <div className="container">
         <h1>Photo credits</h1>
         <p>
-          Photos marked <strong>“ESE J site”</strong> are our own. The other photos show construction across Nigeria
+          Photos marked <strong>“ESE-J site”</strong> are our own. The other photos show construction across Nigeria
           and are used as illustrations under their Creative Commons licences, from Wikimedia Commons.
         </p>
         <ul>

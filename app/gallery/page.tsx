@@ -11,7 +11,7 @@ import { stats } from "@/lib/content";
 
 export const metadata: Metadata = pageMetadata({
   title: "Gallery",
-  description: "Construction, steel fabrication, mechanical piping, plumbing, oil & gas and procurement: a visual look at the work ESE J Engineering delivers.",
+  description: "Construction, steel fabrication, mechanical piping, plumbing, oil & gas and procurement: a visual look at the work ESE-J Engineering delivers.",
   path: "/gallery",
 });
 
@@ -40,7 +40,7 @@ export default function GalleryPage() {
 
       <section className="section">
         <div className="container">
-          <SectionHead label="Gallery" strong="Our work," light="discipline by discipline" text="Filter by discipline and tap any image to view it full size. Photos marked “ESE J site” were taken on our own projects." />
+          <SectionHead label="Gallery" strong="Our work," light="discipline by discipline" text="Filter by discipline and tap any image to view it full size. Photos marked “ESE-J site” were taken on our own projects." />
           <Gallery />
         </div>
       </section>

@@ -4,11 +4,11 @@ import { useState } from "react";
 import Icon from "./Icon";
 import { faqs } from "@/lib/content";
 
-export default function Faq() {
+export default function Faq({ items = faqs }: { items?: { q: string; a: string }[] }) {
   const [open, setOpen] = useState(0);
   return (
     <div className="faq">
-      {faqs.map((f, i) => (
+      {items.map((f, i) => (
         <div key={f.q} className={`faq__item${open === i ? " is-open" : ""}`}>
           <button onClick={() => setOpen(open === i ? -1 : i)} aria-expanded={open === i}>
             <span>{f.q}</span>

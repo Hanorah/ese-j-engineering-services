@@ -4,7 +4,7 @@ export type IconName =
   | "arrow" | "arrowUpRight" | "plus" | "download" | "layers" | "target" | "eye" | "handshake";
 
 export const company = {
-  name: "ESE J Engineering Ltd",
+  name: "ESE-J Engineering Ltd",
   phone: "+234 806 430 4119",
   phoneHref: "tel:+2348064304119",
   whatsapp: "2348064304119",
@@ -31,6 +31,14 @@ export const company = {
 };
 
 export const fullAddress = [company.address, company.city, company.state, company.country].filter(Boolean).join(", ");
+
+const mapQuery = encodeURIComponent(`${company.legalName}, ${fullAddress}`);
+/** Google Maps links for the office. Swap mapUrl for the Google Business Profile share link once the profile is verified. */
+export const maps = {
+  mapUrl: `https://www.google.com/maps/search/?api=1&query=${mapQuery}`,
+  directionsUrl: `https://www.google.com/maps/dir/?api=1&destination=${mapQuery}`,
+  embedUrl: `https://www.google.com/maps?q=${encodeURIComponent(fullAddress)}&output=embed`,
+};
 
 export const stats = [
   { value: 16, suffix: "+", label: "Years of service delivery" },
@@ -229,7 +237,7 @@ export const clients: { name: string; logo?: string }[] = [
 ];
 
 export const timeline = [
-  { year: "2009", title: "ESE J is founded", text: "Built on professionalism, technical excellence and client satisfaction." },
+  { year: "2009", title: "ESE-J is founded", text: "Built on professionalism, technical excellence and client satisfaction." },
   { year: "2011", title: "HSE foundations", text: "Health, Safety & Environment management training with the Occupational Safety Academy." },
   { year: "2015", title: "Welding QA/QC & HSE Level 3", text: "QA/QC in Welding at the Petroleum Training Institute and HSE Level 3 with ISPON." },
   { year: "2018", title: "Welding & fabrication credentials", text: "HND in Welding & Fabrication Engineering Technology (PTI) and ITF NISDP certification." },
@@ -243,7 +251,7 @@ export type GalleryItem = {
   category: string;
   /** "wide" spans two columns, "tall" spans two rows */
   size?: "wide" | "tall";
-  /** true for photos taken on ESE J sites (vs. illustrative stock) */
+  /** true for photos taken on ESE-J sites (vs. illustrative stock) */
   onSite?: boolean;
 };
 
@@ -275,7 +283,7 @@ export const gallery: GalleryItem[] = [
   { src: "/img/ng/trench-blocks.jpg", title: "Foundation blockwork in trench", category: "Civil & Earthworks", size: "wide" },
   { src: "/img/ng/roof-trusses.jpg", title: "Roof truss installation", category: "Construction" },
   { src: "/img/ng/lagos-skyline.jpg", title: "Lagos commercial district", category: "Construction", size: "wide" },
-  { src: "/img/team-crew.jpg", title: "The ESE J crew", category: "Our team", onSite: true, size: "wide" },
+  { src: "/img/team-crew.jpg", title: "The ESE-J crew", category: "Our team", onSite: true, size: "wide" },
   { src: "/img/team.jpg", title: "Field crew mobilisation", category: "Our team", onSite: true },
   { src: "/img/site-team.jpg", title: "Site team & HSE briefing", category: "Our team", onSite: true },
   { src: "/img/ceo.jpg", title: "Leadership on site", category: "Our team", onSite: true },
@@ -293,7 +301,7 @@ export const galleryHighlights = [
 export type BeforeAfter = { title: string; location: string; before: string; after: string; text?: string };
 
 /**
- * Before & after pairs of houses ESE J has built. Use two photos taken from the same spot.
+ * Before & after pairs of houses ESE-J has built. Use two photos taken from the same spot.
  * The section stays hidden on the live site until this list has at least one pair.
  */
 export const beforeAfter: BeforeAfter[] = [];
@@ -307,7 +315,7 @@ export const beforeAfterSample: BeforeAfter = {
   text: "",
 };
 
-/** Licensed photos from Wikimedia Commons (illustrative, not ESE J projects). */
+/** Licensed photos from Wikimedia Commons (illustrative, not ESE-J projects). */
 export const photoCredits = [
   { file: "/img/ng/concrete-pump.jpg", author: "WTF Formwork", license: "CC BY-SA 3.0", source: "https://commons.wikimedia.org/wiki/File:Concrete_pump.JPG" },
   { file: "/img/ng/carpenters-roof.jpg", author: "Ebere Jude", license: "CC BY-SA 4.0", source: "https://commons.wikimedia.org/wiki/File:African_Carpenters_on_Site_in_Nigeria.jpg" },
@@ -349,7 +357,7 @@ export const certifications = [
 ];
 
 export const faqs = [
-  { q: "What services does ESE J Engineering offer?", a: "Project management, mechanical works, certified welding & fabrication, plumbing, procurement and full-scale building construction for residential, commercial and industrial clients." },
+  { q: "What services does ESE-J Engineering offer?", a: "Project management, mechanical works, certified welding & fabrication, plumbing, procurement and full-scale building construction for residential, commercial and industrial clients." },
   { q: "How do I request a quote?", a: "Send us your project details through the contact form, WhatsApp or email, or call +234 806 430 4119. We'll arrange a consultation and site assessment, then send a detailed proposal." },
   { q: "Do you provide support after a project is completed?", a: "Yes. After final testing and handover we provide post-completion support and maintenance where required." },
   { q: "Are you a registered and certified company?", a: "Yes. ESE-J Engineering Company Limited is a private company limited by shares, incorporated with the Corporate Affairs Commission on 17 August 2023 under the Companies and Allied Matters Act 2020 (RC 7101423, TIN 31505531-0001). We are a NATE corporate member, and our team holds welding, QA/QC and HSE certifications." },

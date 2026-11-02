@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "ESE J Engineering Ltd",
-    short_name: "ESE J",
+    name: "ESE-J Engineering Ltd",
+    short_name: "ESE-J",
     description: "Engineering & construction across Nigeria since 2009.",
     start_url: "/",
     display: "standalone",

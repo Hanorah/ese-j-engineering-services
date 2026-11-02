@@ -46,7 +46,7 @@ export default function Home() {
             <div className="backbone__head">
               <h2 className="reveal"><span>Building the backbone of</span> Nigeria since 2009</h2>
               <p className="reveal">
-                ESE J is a trusted engineering firm with over 16 years of experience across mechanical, civil, plumbing
+                ESE-J is a trusted engineering firm with over 16 years of experience across mechanical, civil, plumbing
                 and welding projects, working with clients like Zakhem, NIPCO, Enikom and Greenway.
               </p>
             </div>
@@ -68,10 +68,10 @@ export default function Home() {
                 </Link>
               </div>
               <figure className="backbone__img backbone__img--a reveal">
-                <Image src="/img/team-crew.jpg" alt="The ESE J Engineering team in blue coveralls holding hard hats" fill sizes="(max-width: 900px) 92vw, 34vw" />
+                <Image src="/img/team-crew.jpg" alt="The ESE-J Engineering team in blue coveralls holding hard hats" fill sizes="(max-width: 900px) 92vw, 34vw" />
               </figure>
               <figure className="backbone__img backbone__img--b reveal">
-                <Image src="/img/pipeline-crew.jpg" alt="ESE J crew on a pipeline project" fill sizes="(max-width: 900px) 92vw, 24vw" />
+                <Image src="/img/pipeline-crew.jpg" alt="ESE-J crew on a pipeline project" fill sizes="(max-width: 900px) 92vw, 24vw" />
                 <span className="backbone__badge"><strong>30+</strong> projects delivered</span>
               </figure>
             </div>
@@ -101,7 +101,7 @@ export default function Home() {
       {/* ---------- Why us ---------- */}
       <section className="section">
         <div className="container">
-          <SectionHead label="Why ESE J" strong="What sets us" light="apart from the rest" />
+          <SectionHead label="Why ESE-J" strong="What sets us" light="apart from the rest" />
           <div className="why">
             <figure className="why__photo reveal">
               <Image src="/img/ng/bricklayer.jpg" alt="Bricklayer laying blockwork on a Nigerian building site" fill sizes="(max-width: 900px) 92vw, 40vw" />

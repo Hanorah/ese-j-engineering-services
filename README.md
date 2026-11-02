@@ -1,4 +1,4 @@
-# ESE J Engineering Ltd: website
+# ESE-J Engineering Ltd: website
 
 Next.js 15 (App Router) + TypeScript, plain CSS.
 

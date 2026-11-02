@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Brand from "./Brand";
 import Icon from "./Icon";
-import { company, fullAddress, services } from "@/lib/content";
+import { company, fullAddress, maps, services } from "@/lib/content";
 
 export default function Footer() {
   return (
@@ -38,6 +38,7 @@ export default function Footer() {
             <Link href="/about#process">Our process</Link>
             <Link href="/certifications">Certifications &amp; HSE</Link>
             <Link href="/gallery">Gallery</Link>
+            <Link href="/engineering-company-benin-city">Engineering in Benin City</Link>
           </div>
           <div className="footer__col">
             <h4>Services</h4>
@@ -49,16 +50,16 @@ export default function Footer() {
             <h4>Contact</h4>
             <a href={company.phoneHref}><Icon name="phone" size={16} /> {company.phone}</a>
             <a href={`mailto:${company.email}`}><Icon name="mail" size={16} /> {company.email}</a>
-            <span><Icon name="pin" size={16} /> {fullAddress}</span>
+            <a href={maps.mapUrl} target="_blank" rel="noopener"><Icon name="pin" size={16} /> {fullAddress}</a>
             <a href={`https://${company.website}`}><Icon name="globe" size={16} /> {company.website}</a>
           </div>
         </div>
 
-        <div className="footer__big" aria-hidden="true">ESE J ENGINEERING</div>
+        <div className="footer__big" aria-hidden="true">ESE-J ENGINEERING</div>
 
         <div className="footer__bottom">
           <span>© {new Date().getFullYear()} {company.legalName}. RC {company.rcNumber}. All rights reserved.</span>
-          <span className="footer__links"><Link href="/credits">Photo credits</Link><a href="#top">Back to top ↑</a></span>
+          <span className="footer__links"><a href="/sitemap.xml">Sitemap</a><Link href="/credits">Photo credits</Link><a href="#top">Back to top ↑</a></span>
         </div>
       </div>
     </footer>

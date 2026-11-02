@@ -24,7 +24,7 @@ export default function Gallery() {
         {list.map((g) => (
           <figure key={g.src} className={`gitem${g.size ? ` gitem--${g.size}` : ""}`} data-full={g.src}>
             <Image src={g.src} alt={g.title} fill sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 25vw" />
-            {g.onSite && <span className="gitem__badge">ESE J site</span>}
+            {g.onSite && <span className="gitem__badge">ESE-J site</span>}
             <figcaption>
               <span>{g.category}</span>
               <strong>{g.title}</strong>

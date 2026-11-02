@@ -59,7 +59,7 @@ export default function HomeHero() {
             <span className="pill__dot" /> Driven by quality · {slides[i].tag}
           </span>
           <h1 key={i} className="hhero__title">
-            <span className="sr-only">ESE J Engineering Ltd: engineering &amp; construction company in Nigeria. </span>
+            <span className="sr-only">ESE-J Engineering Ltd: engineering &amp; construction company in Nigeria. </span>
             {slides[i].title}
           </h1>
           <p className="hhero__lead">
