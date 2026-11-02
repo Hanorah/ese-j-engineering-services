@@ -38,7 +38,7 @@ export function businessJsonLd() {
     "@id": businessId,
     name: company.name,
     legalName: company.legalName,
-    alternateName: ["ESE-J Engineering", "ESE J Engineering", "ESE J Engineering Ltd", "ESEJ Engineering", "ESE-J Engineering Ltd"],
+    alternateName: ["ESE-J Engineering", "ESE J Engineering", "ESE J Engineering Ltd", "ESEJ Engineering", "esejengineering", "ESE-J Engineering Ltd"],
     url: SITE_URL,
     logo: abs("/brand/esej-mark.svg"),
     image: abs("/img/team-crew.jpg"),

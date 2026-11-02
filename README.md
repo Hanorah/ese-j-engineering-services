@@ -63,3 +63,5 @@ Environment variables (set in Vercel → Settings → Environment Variables):
 - `NEXT_PUBLIC_SITE_URL`: defaults to `https://www.esejengineering.com`
 - `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`: code from Google Search Console (HTML tag method)
 - `NEXT_PUBLIC_BING_SITE_VERIFICATION`: code from Bing Webmaster Tools
+
+After each deploy, run `npm run indexnow` to tell Bing (which feeds ChatGPT search and Copilot) that pages changed. The key file is `public/<key>.txt`; don't delete it.
