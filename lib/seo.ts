@@ -40,7 +40,7 @@ export function businessJsonLd() {
     legalName: company.legalName,
     alternateName: ["ESE-J Engineering", "ESE J Engineering", "ESE J Engineering Ltd", "ESEJ Engineering", "esejengineering", "ESE-J Engineering Ltd"],
     url: SITE_URL,
-    logo: abs("/brand/esej-mark.svg"),
+    logo: abs("/icon-512.png"),
     image: abs("/img/team-crew.jpg"),
     description:
       `${company.legalName} (RC ${company.rcNumber}) is a CAC-registered private limited company in Benin City, Edo State, delivering engineering and construction across Nigeria since 2009: project management, mechanical works, certified welding & fabrication, plumbing, procurement and building construction.`,
